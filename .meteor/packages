@@ -9,3 +9,4 @@ insecure
 react
 kadira:flow-router-ssr
 kadira:react-layout
+kadira:dochead

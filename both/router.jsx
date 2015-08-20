@@ -1,5 +1,6 @@
 FlowRouter.route("/", {
   action: function() {
+    DocHead.setTitle('Home');
     ReactLayout.render(BlogLayout, {
       content: <PostList />
     });

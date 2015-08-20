@@ -5,6 +5,11 @@ PostPage = React.createClass({
     var data = {};
     if(handle.ready()) {
       data.post = Posts.findOne({_id: this.props._id});
+      DocHead.setTitle(data.post.title);
+      var metaInfo = {name: "description", content: data.post.title };
+      DocHead.addMeta(metaInfo);
+      var metaInfo2 = {name: "keywords", content: "test1 test2 test3"};
+      DocHead.addMeta(metaInfo2);
     }
     
     return data;
