@@ -1,5 +1,6 @@
 FlowRouter.route("/", {
   action: function() {
+    DocHead.addMeta({ charset: 'utf-8'});
     DocHead.setTitle('タイトル');
     ReactLayout.render(BlogLayout, {
       content: <PostList />
